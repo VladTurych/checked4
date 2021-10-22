@@ -740,6 +740,10 @@
  
     <script>
       $(document).ready(function(){
+      window.addEventListener("load", function () {
+      var loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    }); // good
         $('.hamburger').click(function () {
         $('.sitebar__main-container').addClass('sitebar__open');
 
